@@ -3,61 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="msvalidate.01" content="2CA20B09DE4C66614EB10203CC06D4DA" />
     <title>晓白电脑维修官网</title>
     <style>
-        /* 设置全局样式 */
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100%; /* 确保页面高度占满整个屏幕 */
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-        }
-
-        /* 设置背景图片 */
-        body {
-            background-image: url('https://pic.51.mk/images/2025/02/28/597756.jpg'); /* 使用外部图片链接 */
-            background-size: cover; /* 背景图片覆盖整个页面 */
-            background-position: center; /* 背景图片居中 */
-            background-repeat: no-repeat; /* 背景图片不重复 */
-            background-attachment: fixed; /* 背景图片固定，不随页面滚动 */
+            background-color: #f0f0f0;
+            background-image: url('https://pic.51.mk/images/2025/02/28/597756.jpg'); /* 替换为你的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* 内容分布在顶部和底部 */
+            align-items: center;
+            justify-content: center;
         }
-
-        /* 标题样式 */
-        h1 {
-            font-size: 3em;
+        .logo {
             margin-bottom: 20px;
-            padding-top: 50px; /* 标题与顶部的距离 */
         }
-
-        /* 超链接样式 */
-        a {
+        .logo img {
+            max-width: 200px; /* 调整Logo大小 */
+            height: auto;
+        }
+        .search-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .search-box input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-box input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .links {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .links a {
             display: block;
             margin: 10px 0;
-            font-size: 1.5em;
-            color: white;
+            font-size: 18px;
+            color: #0078d7;
             text-decoration: none;
-        }
-
-        a:hover {
-            color: yellow;
-        }
-
-        /* 底部文本样式 */
-        footer {
-            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            background-color: rgba(255, 255, 255, 0.8); /* 给链接添加半透明背景 */
             padding: 10px;
-            font-size: 1em;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 14px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div>
+
+    <div class="logo">
+        <img src="https://pic.51.mk/images/2025/03/04/_ba-stylelogo.bluearchive.cc.png" alt="_ba-stylelogo.bluearchive.cc.png" alt="我的Logo"> <!-- 替换为你的Logo图片的URL -->
+    </div>
+
+    <div class="search-box">
+        <form action="https://www.bing.com/search" method="GET">
+            <input type="text" name="q" placeholder="在Bing上搜索...">
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+
+    <div class="links">
         <h1>晓白的小官网</h1>
         <a href="https://www.xiaohuiboke.cn" target="_blank">1. 小辉技术资源栈(我以后会在这里面更新)</a>
         <a href="https://www.123684.com/s/bUalVv-Siood" target="_blank">2. 晓白PE主下载线路</a>
@@ -70,9 +100,9 @@
 
     </div>
 
-    <!-- 底部文本 -->
-    <footer>
-        本网站推荐使用GoogleChrome,360安全浏览器,360极速浏览器,Edge,火狐等主流浏览器访问（自己做的也可以，除非不是谷歌内核的，QQ群368959605管理早濑优香，我是群主的群暂不开放）
-    </footer>
+    <div class="footer">
+        <p>本网站推荐使用GoogleChrome,360安全浏览器,360极速浏览器,Edge,火狐等主流浏览器访问（自己做的也可以，除非不是谷歌内核的，QQ群368959605管理早濑优香，我是群主的群暂不开放）</p>
+    </div>
+
 </body>
 </html>
